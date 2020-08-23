@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-image: url(background.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Appathon NTUA 2020</title>
+  <link rel='stylesheet' type="text/css" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+    <fieldset>
+      <form action="/" method="post" name="dates" id="dates">
+        <div style="display: flex; justify-content: center;" name="t">
+          <input type="text" id="start" name="date1">
+          <input type="text" id="end" name="date2">
+        </div>
+        <br><br>
+
+        <input type="submit" class="ghost-button" value="Set Date Range">
+      </form>
+    </fieldset>
+
+    <p>
+      <%= message %>
+    </p>
+
+  </div>
+
+  <script src="moment/moment.js"></script>
+  <script src="pikaday/pikaday.js"></script>
+  <script src="js/date-range.js"></script>
+
+
+</body>
+
+</html>
